@@ -1,0 +1,1 @@
+function t(t){var e=document.documentElement;function n(){var n=e.clientWidth>t?t:e.clientWidth,i=parseFloat(n/t*100);e.style.fontSize=i+"px";var o=parseFloat(window.getComputedStyle(e)["font-size"]);Math.abs(i-o)>.1&&(e.style.fontSize=i*i/o+"px")}n(),window.addEventListener("resize",n)}export{t as calc};

@@ -1,0 +1,35 @@
+{
+  "name": "html-fontsize-calc",
+  "version": "1.0.0",
+  "description": "calculate html fontSize",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "rem",
+    "fontSize"
+  ],
+  "author": "youngqluol",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "html-fontsize-calc": "^1.0.0",
+    "rollup": "^4.9.4",
+    "rollup-plugin-delete": "^2.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
